@@ -15,8 +15,8 @@ CODE_EXTENSIONS = {'.ts', '.tsx', '.js', '.jsx', '.py', '.go', '.rs', '.java', '
 
 # Patterns for valid comments (should not be flagged)
 VALID_PATTERNS = [
-    r'^\s*#\s*(given|when|then|and|but)\b',  # BDD comments
-    r'^\s*//\s*(given|when|then|and|but)\b',  # BDD comments
+    r'^\s*#\s*#?\s*(given|when|then|and|but)\b',  # BDD comments (Python)
+    r'^\s*//\s*#?\s*(given|when|then|and|but)\b',  # BDD comments (JS/TS)
     r'^\s*"""',  # Python docstrings
     r"^\s*'''",  # Python docstrings
     r'^\s*/\*\*',  # JSDoc/JavaDoc
