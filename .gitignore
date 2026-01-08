@@ -17,6 +17,7 @@
 # Exclude runtime/generated files from hooks
 hooks/*.log
 hooks/debug.log
+hooks/todo-enforcer.config.json
 
 # Exclude local settings (contains machine-specific paths)
 settings.json

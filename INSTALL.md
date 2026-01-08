@@ -35,7 +35,6 @@ Fetch and install these files to ~/.claude/:
 - https://raw.githubusercontent.com/jarrodwatts/claude-code-config/master/hooks/keyword-detector.py → ~/.claude/hooks/keyword-detector.py
 - https://raw.githubusercontent.com/jarrodwatts/claude-code-config/master/hooks/check-comments.py → ~/.claude/hooks/check-comments.py
 - https://raw.githubusercontent.com/jarrodwatts/claude-code-config/master/hooks/todo-enforcer.sh → ~/.claude/hooks/todo-enforcer.sh
-- https://raw.githubusercontent.com/jarrodwatts/claude-code-config/master/hooks/todo-enforcer.config.json → ~/.claude/hooks/todo-enforcer.config.json
 
 Create the directories first, then fetch each file using curl and write to the destination. Make the hook scripts executable.
 
@@ -52,7 +51,7 @@ Do NOT install CLAUDE.md - that contains personal workflow preferences users sho
 | Skills | 1 | Planning-with-files (Manus-style workflow) |
 | Agents | 4 | Codebase search, media interpreter, OSS librarian, docs writer |
 | Commands | 1 | Interview (spec fleshing) |
-| Hooks | 4 | Keyword detector, comment checker, todo enforcer |
+| Hooks | 3 | Keyword detector, comment checker, todo enforcer |
 
 ## After Installation
 
