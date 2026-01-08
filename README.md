@@ -1,6 +1,6 @@
 # Claude Code Config
 
-Personal Claude Code configuration files.
+my personal claude code configuration - mostly not created by me, but sourced from many talented people in the community.
 
 ## Installation
 

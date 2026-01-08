@@ -36,9 +36,22 @@ Fetch and install these files to ~/.claude/:
 - https://raw.githubusercontent.com/jarrodwatts/claude-code-config/master/hooks/check-comments.py → ~/.claude/hooks/check-comments.py
 - https://raw.githubusercontent.com/jarrodwatts/claude-code-config/master/hooks/todo-enforcer.sh → ~/.claude/hooks/todo-enforcer.sh
 
-Create the directories first, then fetch each file using curl and write to the destination. Make the hook scripts executable.
+**Global Instructions**:
+- https://raw.githubusercontent.com/jarrodwatts/claude-code-config/master/CLAUDE.md → ~/.claude/CLAUDE.md
 
-Do NOT install CLAUDE.md - that contains personal workflow preferences users should customize themselves.
+**CRITICAL: Do NOT overwrite existing files.**
+
+Before installing each file:
+1. Check if the destination file already exists
+2. If it does NOT exist → install it
+3. If it DOES exist → ask the user what to do:
+   - **Skip**: Keep their existing file unchanged
+   - **Overwrite**: Replace with the new version
+   - **Merge**: Intelligently combine both versions, preserving user customizations while adding new content
+
+This is especially important for ~/.claude/CLAUDE.md which contains personal workflow preferences. Never overwrite without explicit user consent.
+
+Create directories as needed, fetch files with curl, and make hook scripts executable.
 ```
 
 ---
@@ -52,6 +65,7 @@ Do NOT install CLAUDE.md - that contains personal workflow preferences users sho
 | Agents | 4 | Codebase search, media interpreter, OSS librarian, docs writer |
 | Commands | 1 | Interview (spec fleshing) |
 | Hooks | 3 | Keyword detector, comment checker, todo enforcer |
+| CLAUDE.md | 1 | Global instructions and workflow preferences |
 
 ## After Installation
 
