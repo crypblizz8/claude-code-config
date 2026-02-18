@@ -11,14 +11,14 @@ Copy the prompt from [INSTALL.md](INSTALL.md) and paste it into Claude Code. Cla
 ### Option 2: Git Clone
 
 ```bash
-git clone https://github.com/jarrodwatts/claude-code-config.git ~/.claude
+git clone https://github.com/crypblizz8/claude-code-config.git ~/.claude
 ```
 
 ### Option 3: Selective Install
 
 ```bash
 # Clone elsewhere first
-git clone https://github.com/jarrodwatts/claude-code-config.git /tmp/claude-config
+git clone https://github.com/crypblizz8/claude-code-config.git /tmp/claude-config
 
 # Copy what you need
 cp -r /tmp/claude-config/rules/* ~/.claude/rules/
@@ -45,7 +45,12 @@ Model-invoked capabilities Claude applies automatically.
 
 | Skill | Description |
 |-------|-------------|
-| `planning-with-files` | Manus-style persistent markdown planning |
+| `planning-with-files` | Persistent markdown planning for multi-step work, research, and progress tracking |
+| `react-useeffect` | React useEffect best practices, including when to avoid Effects |
+| `rigorous-coding` | Rigorous implementation and review standards for correctness and reliability |
+| `vercel-react-best-practices` | Vercel React/Next.js performance patterns for rendering, data, and bundling |
+| `web-design-guidelines` | UI/UX and accessibility review checklist for web interfaces |
+| `web3` | Consolidated web3 core skill for Next.js/Vercel dApps, auth, Solidity patterns, security, audit, and EIP references |
 
 ### Agents (`.claude/agents/`)
 
@@ -73,12 +78,17 @@ Scripts triggered by Claude Code events.
 | Hook | Event | Description |
 |------|-------|-------------|
 | `keyword-detector.py` | UserPromptSubmit | Detects keywords in prompts |
+| `skill-reminder.sh` | UserPromptSubmit | Reminds the model to invoke relevant skills before coding |
 | `check-comments.py` | PostToolUse (Write/Edit) | Validates comment policy |
 | `todo-enforcer.sh` | Stop | Ensures todos are tracked |
 
 ### CLAUDE.md
 
 Personal global instructions loaded into every session.
+
+## Credits
+
+- Web3 skill content in `skills/web3` is adapted from [0xinit/web3-godmode-config](https://github.com/0xinit/web3-godmode-config).
 
 ## Recommended Plugins
 
