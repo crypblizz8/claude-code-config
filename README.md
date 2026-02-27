@@ -48,6 +48,7 @@ Model-invoked capabilities Claude applies automatically.
 | `planning-with-files` | Persistent markdown planning for multi-step work, research, and progress tracking |
 | `react-useeffect` | React useEffect best practices, including when to avoid Effects |
 | `rigorous-coding` | Rigorous implementation and review standards for correctness and reliability |
+| `screen-recording-frame-assessment` | Analyze app screen recordings into timeline-based UX findings and prioritized UI improvements |
 | `vercel-react-best-practices` | Vercel React/Next.js performance patterns for rendering, data, and bundling |
 | `web-design-guidelines` | UI/UX and accessibility review checklist for web interfaces |
 | `web3` | Consolidated web3 core skill for Next.js/Vercel dApps, auth, Solidity patterns, security, audit, and EIP references |
